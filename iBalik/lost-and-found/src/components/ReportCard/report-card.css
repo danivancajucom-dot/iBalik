@@ -1,0 +1,20 @@
+.report-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #ECEBE6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.report-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.report-info {
+    flex: 1;
+}

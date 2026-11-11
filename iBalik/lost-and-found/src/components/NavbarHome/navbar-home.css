@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-home {
+  width: 1241px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 100px;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+}
+
+.logo-home {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-home img {
+  width: 39px;
+  height: 40px;
+}
+
+.logo-home h4 {
+  color: #710014;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0;
+}
+
+.sign-in {
+  width: 108px;
+  height: 34px;
+  margin: 0;
+  background-color: #710014;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.sign-in:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+

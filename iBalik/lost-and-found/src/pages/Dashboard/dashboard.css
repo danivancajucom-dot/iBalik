@@ -1,0 +1,108 @@
+.dashboard-container {
+  margin-left: 387px; /* space for NavbarDashboard */
+  padding: 25px 40px;
+  box-sizing: border-box;
+  background-color: #FAFAF8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #710014;
+}
+
+.search-bar {
+  width: 250px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: linear-gradient(180deg, #F2F1ED 63%, #C9C7BF 100%);
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+}
+
+.status-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #710014;
+  object-fit: cover;
+}
+
+.status-details h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #710014;
+}
+
+.status-details p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.report-section h2 {
+  color: #710014;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .dashboard-container {
+    margin-left: 0; /* navbar collapses on smaller screens */
+  }
+}
+
+@media (max-width: 786px) {
+  .status-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .status-details h4 {
+    font-size: 20px;
+  }
+}
+
+.report-section {
+    margin-top: 30px;
+}
+
+.report-list {
+    max-height: 400px; /* adjust as needed */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 10px;
+}
+
+.report-card {
+    background-color: #ECEBE6;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

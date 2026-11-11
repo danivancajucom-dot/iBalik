@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
+.register-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #F2F1ED 63%, #C9C7BF 100%);
+  position: relative;
+  min-width: 900px;
+}
+
+
+.register-left-side {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.register-left-side h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #710014;
+  margin-bottom: 20px;
+}
+
+.register-left-side h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.reg-fields {
+  width: 350px;
+  height: 50px;
+  padding: 0px 12px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.reg-fields:focus {
+  outline: none;
+  border: 1px solid #710014;
+  box-shadow: 0px 0px 4px #71001470;
+}
+
+button {
+  width: 350px;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #710014;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.register-right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #F2F1ED 63%, #C9C7BF 100%);
+  position: relative;
+}
+
+.register-right-side img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.register-right-side h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.register-right-side h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  align-self: center;
+}
+
+.red-text {
+  color: #710014;
+  font-weight: 600;
+}
+
+.register-left-side p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: black;
+}
+
+.register-left-side p .red-text {
+  color: #710014;
+  cursor: pointer;
+}
+
+.register-left-side .input-label  {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  
+}
+
+.register-left-side .reg-label {
+  font-family: 'Inter', sans-serif;
+  color: #710014;
+  text-align: left;
+  width: 350px;
+  display: block;
+  font-family: 'Playfair Display', serif;
+}
+
+.register-left-side .password-hint {
+  font-family: 'Inter', sans-serif;
+  color: #710014;
+  text-align: center;
+  width: 350px;
+  display: block;
+  font-family: 'Playfair Display', serif;
+}
+
+

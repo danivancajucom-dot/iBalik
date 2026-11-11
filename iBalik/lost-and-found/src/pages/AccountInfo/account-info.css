@@ -1,0 +1,256 @@
+.acc-info-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAF8;
+  height: 100vh;
+  margin-left: 387px; /* same width as NavbarDashboard */
+  padding: 25px 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  gap: 25px;
+}
+
+.info-box {
+  width: 100%;
+  min-height: 250px;
+  background: linear-gradient(180deg, #F2F1ED 63%, #C9C7BF 100%);
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  gap: 30px;
+  padding: 25px 30px;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #710014;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.user-details h4 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  color: #710014;
+}
+
+.detail-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.detail-row span {
+  font-weight: 600;
+  min-width: 80px;
+  color: #555;
+}
+
+.detail-row p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-box .fa-pen-to-square {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.info-box .fa-pen-to-square:hover {
+  color: #710014;
+  transform: scale(1.1);
+}
+
+.my-reports h2 {
+  color: #710014;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.floating-add-btn {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 50px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #710014;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.floating-add-btn:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .acc-info-container {
+    margin-left: 0; /* collapse navbar on smaller screens */
+  }
+}
+
+@media (max-width: 786px) {
+  .info-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .user-details {
+    align-items: center;
+  }
+  .detail-row {
+    justify-content: center;
+  }
+}
+
+/* Report Cards */
+.report-card {
+    position: relative;
+    background-color: #ECEBE6;
+    border: 1px solid #710014;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.report-card:hover {
+    transform: scale(1.02);
+}
+
+.report-content {
+    flex: 1;
+    cursor: pointer;
+}
+
+.report-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #710014;
+    margin-bottom: 8px;
+}
+
+.report-card p {
+    margin: 4px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Three-dot menu */
+.report-menu-container {
+    position: relative;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+    color: #710014;
+}
+
+.report-menu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.report-menu button {
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.report-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.report-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #710014;
+  background-color: #ECEBE6;
+  margin-bottom: 15px;
+}
+
+.report-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.dots-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #710014;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.action-btn {
+  background-color: #710014;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: black;
+}
+
+.report-card .report-image{
+height: 200px;
+width: 250px;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
+.homepage-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav { 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  position: fixed; 
+  top: 20px;
+  z-index: 10;
+}
+
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin-top: 100px; 
+}
+
+
+.homepage-left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-left-side h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #000;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.homepage-left-side .red-text {
+  color: #710014;
+}
+
+.homepage-right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.homepage-right-side .logo {
+  width: 350px;
+  height: auto;
+}
+
+.homepage-right-side .submit-report {
+  width: 333px;
+  height: auto;
+  padding-left: 10%;
+}
+
+
+@media (max-width: 786px) {
+  .homepage-left-side h1 {
+    font-size: 50px;
+  }
+
+  .homepage-right-side .logo, .homepage-right-side .submit-report  {
+    width: 200px;
+  }
+
+  .homepage-container {
+    margin-top: 120px;
+    gap: 10px;
+  }
+}

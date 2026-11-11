@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+
+.submit-report-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAF8;
+  height: 100vh;
+  margin-left: 387px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+  overflow-y: auto; /* enable vertical scrolling */
+}
+
+.header-submit-report {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header-submit-report h1 {
+  color: #710014;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.submit-report-form {
+  background-color: #ECEBE6;
+  border: 1px solid #000;
+  border-radius: 10px;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-self: center;
+}
+
+.submit-report-form .submitReport-label{
+  color: #710014;
+  text-align: left;
+  width: 450px;
+  display: block;
+  font-family: 'Playfair Display', serif;
+}
+
+.submit-report-form input,
+.submit-report-form textarea {
+  width: 450px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.submit-report-form input:focus,
+.submit-report-form textarea:focus {
+  outline: none;
+  border-color: #710014;
+  box-shadow: 0 0 0 1px #710014;
+}
+
+.submit-report-form textarea {
+  height: 150px;
+  border-radius: 10px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cancelBtn, .submitBtn {
+  width: 160px;
+  height: 40px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelBtn {
+  background-color: white;
+  color: #710014;
+  border: 1px solid #710014;
+}
+
+.cancelBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.submitBtn {
+  background-color: #710014;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submitBtn:hover {
+  background-color: black;
+}
+
+@media (max-width: 786px) {
+  .navbar-dashboard {
+    display: none; 
+  }
+
+  .submit-report-container {
+    margin-left: 0;
+    width: 100vw; 
+    padding: 20px; 
+  }
+
+  .submit-report-form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .submit-report-form input,
+  .submit-report-form textarea,
+  .submit-report-form select {
+    width: 320px;
+  }
+
+  .submit-report-form .submitReport-label{
+    width: 300px;
+  }
+}
+
+/* STYLE FOR SELECT TO MATCH INPUT FIELDS */
+.submit-report-form select {
+  width: 450px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  appearance: none; 
+  cursor: pointer;
+}
+
+/* FOCUS EFFECT MATCHING INPUT */
+.submit-report-form select:focus {
+  outline: none;
+  border-color: #710014;
+  box-shadow: 0 0 0 1px #710014;
+}
+
+/* CUTE ALERT BOX */
+.cute-alert {
+  width: 450px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #fcfff3;
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/* SMALL X BUTTON */
+.close-alert {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;     
+  cursor: pointer;
+  padding: 2px 6px;     
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.close-alert:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
